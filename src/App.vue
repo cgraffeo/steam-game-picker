@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-area">
     <mainPage></mainPage>
   </div>
 </template>
@@ -15,4 +15,4 @@ export default {
 }
 </script>
 
-<style lang="sass" serc="./scss/style.scss"></style>
+<style lang="sass" src="./scss/style.scss"></style>

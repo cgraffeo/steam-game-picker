@@ -1,5 +1,53 @@
 @import "../scss/vars";
 
-.main-area{
+body{
+  display: flex;
+  justify-content: center;
+  background-color: $primary-background;
+}
 
+.container-area{
+  align-self: center;
+}
+
+h5{
+  color: $secondary-text;
+}
+.main-area{
+  height: 400px;
+  width: 100%;
+  background-color: $secondary-background;
+  box-shadow: 3px 4px 17px 0px rgba(0,0,0,0.75);
+  color: $primary-text;
+  padding: 20px;
+}
+
+.mdl-textfield{
+  width: 80%;
+}
+
+.search-name {
+  display: flex;
+  width: 100%;
+}
+
+button {
+  align-self: center;
+  margin-left: 10px;
+}
+
+.result-area {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+#results{
+  align-self: center;
+  font-size: 20px;
+}
+img{
+  width: 25%;
+  align-self: center;
+  margin-bottom: 20px;
 }

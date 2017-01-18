@@ -1,19 +1,21 @@
 <template>
 <div class="main-area">
   <div id="title">
-    <h1>Never wonder what game to play again!</h1>
-    <h3>Enter your Steam name below.</h3>
+    <h2>Never wonder what game to play again!</h1>
+    <h5>Enter your Steam name below.</h3>
   </div>
   <div class="input-area">
-    <form id="search-name" @submit.prevent="search">
-      <input type="search" placeholder="Enter Diplay name" id="vanityUrl" v-model="vanityUrl">
-      <button type="submit" id="search"></button>
+    <form class= "search-name" id="search-name" @submit.prevent="search">
+    <mdl-text-field label-class="" type="search" label="Enter Steam Name" v-model="vanityUrl"></mdl-text-field>
+    <mdl-button msg="Find me a game!" type="submit" accent colored raised ripple></mdl-button>
     </form>
-    <!-- <mdl-text-field label-class="" label="Enter Steam User Name" value="vanityUrl"></mdl-text-field>
-    <mdl-button msg="Find me a game to play!" primary></mdl-button> -->
+
   </div>
-  <div id="results" v-text='selectedGame.name'></div>
-  <img v-if="selectedGame.name" :src="selectedGameImage" alt="">
+  <div class="result-area">
+    <img v-if="selectedGame.name" :src="selectedGameImage" alt="">
+    <div id="results" v-text='selectedGame.name'>
+    </div>
+  </div>
 </div>
 </template>
 
