@@ -21,7 +21,14 @@
     "vue": "vue/dist/vue.common.js"
   },
   "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4",
     "node-sass": "^4.3.0",
+    "request": "^2.79.0",
     "vue": "^2.0.1"
   },
   "devDependencies": {
